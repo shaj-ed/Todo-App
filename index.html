@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner container">
+        <h1 class="header__headline">TODO</h1>
+
+        <span class="header__icon" id="theme-switch">
+          <img src="./src/images/icon-sun.svg" alt="Icon" id="theme-icon" />
+        </span>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="main-section container">
+      <!-- Add todo form -->
+      <form class="todo-form">
+        <label for="todo-input"></label>
+        <span class="check-circle"></span>
+        <input
+          type="text"
+          class="todo-form__input"
+          id="todo-input"
+          autocomplete="off"
+          placeholder="Create a new todo.."
+        />
+        <button class="button-none"></button>
+      </form>
+
+      <!-- Todo list container -->
+      <section class="todo-container">
+        <!-- Main todo list -->
+        <ul class="todo-list">
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle show-bg">
+                <img src="./src/images/icon-check.svg" alt="Checkbox Icon" />
+              </span>
+
+              <h2 class="todo-list__name complete-name">
+                Completed Online Javascript Course
+              </h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle">
+                <!-- <img src="" alt="Checkbox Icon" /> -->
+              </span>
+
+              <h2 class="todo-list__name">Jog around the park 3x</h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle">
+                <!-- <img src="" alt="Checkbox Icon" /> -->
+              </span>
+
+              <h2 class="todo-list__name">10 minutes meditatin</h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle">
+                <!-- <img src="./src/images/icon-check.svg" alt="Checkbox Icon" /> -->
+              </span>
+
+              <h2 class="todo-list__name">Read for 1 hour</h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle">
+                <!-- <img src="./src/images/icon-check.svg" alt="Checkbox Icon" /> -->
+              </span>
+
+              <h2 class="todo-list__name">Pickup groceries</h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+
+          <li class="todo-list__item">
+            <div class="item">
+              <span class="todo-list__icon-check check-circle">
+                <!-- <img src="./src/images/icon-check.svg" alt="Checkbox Icon" /> -->
+              </span>
+
+              <h2 class="todo-list__name">
+                Complete todo app on Frontend Mentor
+              </h2>
+
+              <span class="todo-list__icon-cross">
+                <img
+                  src="./src/images/icon-cross.svg"
+                  class="cross-icon"
+                  alt="Cross Icon"
+                />
+              </span>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Todo list footer -->
+        <div class="todo-container__footer">
+          <span class="item-left"></span>
+
+          <ul class="filter-item">
+            <li class="filter-all">All</li>
+            <li class="filter-active">Active</li>
+            <li class="filter-completed">Completed</li>
+          </ul>
+
+          <span class="item-clear">Clear Completed</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">Drag and Drop to reorder list.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
