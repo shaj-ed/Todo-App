@@ -16,5 +16,5 @@ Users should be able to:
 
 ## Solution URL
 
-- [Frontend Mentor]()
-- [Netlify]()
+- [Frontend Mentor](https://www.frontendmentor.io/solutions/todo-apphtml5-css-vanillajs-uxkeUTWeY)
+- [Netlify](https://ed-todo-app.netlify.app/)
